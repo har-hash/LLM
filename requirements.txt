@@ -1,6 +1,7 @@
 # FastAPI for web server
 fastapi
 uvicorn[standard]
+python-multipart 
 
 # LLM and Embeddings
 google-generativeai 
