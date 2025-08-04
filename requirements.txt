@@ -1,0 +1,20 @@
+# FastAPI for web server
+fastapi
+uvicorn[standard]
+
+# LLM and Embeddings
+openai
+sentence-transformers
+
+# Vector Store
+faiss-cpu # Use faiss-gpu if you have a compatible GPU
+
+# Document Parsers
+pdfplumber
+python-docx
+
+# Utilities
+pydantic
+python-dotenv
+numpy
+langchain

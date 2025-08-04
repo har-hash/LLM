@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliQueryAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IntelliQueryAI 🧠</h1>
+            <p>Intelligent Document Query & Decision System</p>
+        </header>
+
+        <div class="card">
+            <h2>Step 1: Upload Document</h2>
+            <p>Upload a policy document (.pdf, .docx, .txt). A unique session will be created for it.</p>
+            <div id="upload-section">
+                <input type="file" id="file-input" accept=".pdf,.docx,.txt">
+                <button id="upload-button">Upload and Process</button>
+            </div>
+            <div id="upload-status" class="status"></div>
+        </div>
+
+        <div class="card" id="query-card" style="display:none;">
+            <h2>Step 2: Ask a Question</h2>
+            <p>Now, ask a question about the uploaded document.</p>
+            <div id="query-section">
+                <input type="text" id="question-input" placeholder="e.g., 45M, heart condition, 2-year policy">
+                <button id="query-button">Get Answer</button>
+            </div>
+        </div>
+
+        <div id="results-card" class="card" style="display:none;">
+            <h2>Results</h2>
+            <div id="loader" class="loader" style="display:none;"></div>
+            <div id="results-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
