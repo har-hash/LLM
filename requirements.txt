@@ -18,3 +18,4 @@ pydantic
 python-dotenv
 numpy
 langchain
+httpx
